@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+    <nav class="bg-white shadow-md px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-bold text-gray-800">MyNews</span>
+      </div>
+
+
+
+      <!-- Search Bar -->
+      <div class="mx-2 ml-auto w-[350px] flex gap-2" >
+        <div class="relative">
+          <input
+            id="keyword"
+            type="text"
+            placeholder="Search News like Sports..."
+            class="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+          />
+          <svg
+            class="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m1.1-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          
+        </div>
+        <button class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 px-3" onclick="searchNew()">Search</button>
+      </div>
+
+    </div>
+  </nav>
+    
+ <div id="cards" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-16">
+    
+</div>
+
+<p id="error" 
+        class="w-[300px] ml-auto mr-auto hidden mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-center text-sm font-medium text-red-700"
+        >
+</p>
+
+<script src="app.js"></script>
+</body>
+</html>
